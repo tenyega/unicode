@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 10px;
+    user-select: none;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+div#out {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+div.ihm_btn {
+    padding: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: #ccc;
+}
+
+div.ihm_btn div.ihm_btn_avantApres {
+    padding: 10px;
+    display: flex;
+}
+
+div.ihm_btn div.ihm_btn_gandirReduire {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+div.ihm_btn div.ihm_btn_gandirReduire input {
+    padding: 9px;
+}
+
+div.ihm_btn div.ihm_btn_gandirReduire span {
+    font-size: 3em;
+}
+
+div.ihm_btn div.favoris {
+    padding: 5px;
+    display: inline-flex;
+    margin: 5px;
+}
+
+.curseur label,
+div.ihm_btn div.favoris label {
+    margin-right: 5px;
+    padding-top: 17px;
+    font-weight: 700;
+    /* font-family: 'Nunito', sans-serif; */
+    letter-spacing: 1px;
+}
+
+div#out div.unicode {
+    background-color: #cccccc7a;
+    margin: 2px;
+    min-width: 52px;
+}
+
+div#out div.unicode span.chiffre {
+    /* font-family: "Nunito", sans-serif; */
+    padding: 2px 5px 0 5px;
+    font-weight: bold;
+    font-size: 0.9em;
+    display: block;
+    text-align: center;
+}
+
+div#out div.unicode div.img {
+    padding: 5px;
+    text-align: center;
+    font-size: 3em;
+    line-height: 1em;
+}
+
+
+/*-------------------------------------------------------------Curseur*/
+
+.curseur {
+    background-color: #ccc;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+}
+
+.curseur label {
+    margin-right: 5px;
+    padding-top: 6px;
+    font-weight: 700;
+    /* font-family: 'Nunito', sans-serif; */
+    letter-spacing: 1px;
+}
+
+.curseur .valeur {
+    background-color: aliceblue;
+    padding: 5px;
+    min-width: 40px;
+    display: inline-block;
+}
+
+.curseur .valeur:hover {
+    cursor: ew-resize;
+}
+
+.lesCurseurs>div {
+    display: inline-block;
+}

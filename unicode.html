@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>unicode</title>
+
+    <link rel="stylesheet" type="text/css" href="unicode.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body onload="init();">
+
+    <div class='ihm_btn'>
+        <div class='ihm_btn_avantApres'>
+            <input type='button' value='&#8630' onclick='previousBtn()' />
+            <input type='button' value='&#8631' onclick='afterBtn()' />
+        </div>
+        <div class=ihm_btn_gandirReduire>
+            <input type='button' value='-' onclick='reduireImg()' /><span>&#128269</span>
+
+            <input type='button' value='+' onclick='grandirImg()' />
+        </div>
+
+        <div class='lesCurseurs'>
+            <div class='box1'></div>
+        </div>
+        <div class='favoris'>
+            <label>Favoris :</label>
+            <input type='button' value='&#127773' onclick='searchImg(127773)' />
+            <input type='button' value='&#120488' onclick='searchImg(120488)' />
+            <input type='button' value='&#128383' onclick='searchImg(128383)' />
+            <input type='button' value='&#129464' onclick='searchImg(129464)' />
+
+            <input type='button' value='&#8636' onclick='searchImg(8636)' />
+        </div>
+
+    </div>
+    <div id='out'>
+        <!-- <div class='unicode'>
+            <span class='chiffre'> 127773 </span>
+            <div class="img">🌝</div>
+        </div>
+        <div class='unicode'>
+            <span class='chiffre'> 127773 </span>
+            <div class="img">🌝</div>
+        </div>
+        <div class='unicode'>
+            <span class='chiffre'> 127773 </span>
+            <div class="img">🌝</div>
+        </div> -->
+    </div>
+
+    <audio preload="auto" id="ptitSonHover">
+        <source src="../sonWeb/tssss.ogg" type="audio/ogg" />
+        <source src="../sonWeb/tssss.mp3" type="audio/mpeg" />
+        <source src="../sonWeb/tssss.wav" type="audio/wav" />
+    </audio>
+
+    <script src="unicode.js" type="text/javascript"></script>
+    <script src="../curseur/class.curseur.js"></script>
+</body>
+
+</html>
